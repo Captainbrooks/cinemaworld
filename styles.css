@@ -1,0 +1,57 @@
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
+}
+
+.nav.active {
+    left: 0;
+}
+
+.nav li {
+    padding: 15px;
+    text-align: center;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav li a:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+.menu-toggle .fa-times {
+    display: block; /* Initially hide the "X" icon */
+}
+
+.menu-toggle.active .fa-times {
+    display: block; /* Show the "X" icon when menu is active */
+}
+
+.menu-toggle .close-icon {
+    display: block; /* Initially hide the "X" icon */
+}
+
+.menu-toggle.active .close-icon {
+    display: block; /* Show the "X" icon when menu is active */
+    font-size: 24px; /* Adjust the font size as needed */
+    cursor: pointer; /* Add a pointer cursor for better UX */
+}
+
